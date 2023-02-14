@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Petrona:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  html {
+    line-height: 1.618;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: theme('fontFamily.alpha');
+    color: theme('colors.gray.800');
+  }
+
+}
+
+@layer components {
+
+  .sgButton {
+    border: 2px solid theme('colors.bravo');
+    padding: theme('spacing.2') theme('spacing.6');
+    color: theme('colors.bravo');
+    text-transform: uppercase;
+    border-radius: theme('borderRadius.xl');
+    font-weight: 700;
+    padding: 20px
+  }
+
+  .sgButton--alpha {
+    border: 2px solid theme('colors.alpha');
+    color: theme('colors.alpha');
+  }
+
+}
+
+@layer utilities {
+
+}
